@@ -19,7 +19,7 @@ mit = input("[T]églalap vagy [N]égyzet kerületét számoljam ki? [T|N]: ")
 if mit.upper() == "N":
     alap = beker("négyzet", "a")
     # calculation
-    kerulet = teglalapKerulet(alap, alap)
+    kerulet = teglalapKerulete(alap, alap)
 
     # output
     kiir("négyzet", kerulet)
