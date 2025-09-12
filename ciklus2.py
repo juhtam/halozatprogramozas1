@@ -2,6 +2,8 @@
 
 # while bennmaradási feltétel:
 #     ciklus mag
+
+
 bekertszam = None
 bekertszamok = []
 while bekertszam != 0:
@@ -17,3 +19,5 @@ while be_n != 0:
     be_n = int(input("kérek egy számot: "))
     osszeg += be_n
 print(osszeg)
+
+#enter végéig kérjen számot hf
