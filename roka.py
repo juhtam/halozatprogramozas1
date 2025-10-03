@@ -18,11 +18,35 @@ with open("libak.txt") as filemutato:
 print(libak)
 
 # 1. Hány kiló libát evett a róka a héten?
-kg = 0
-roka_evett_kg = 0
-for kg in libak:
-    if kg <= 3:
-        roka_evett_kg += kg
+roka_kilo = 0
+for liba in libak:
+    if liba <= 3:
+        roka_kilo += liba
 
-print(f"{kg} kiló libát evett a róka a héten")
+print(f"{roka_kilo} kiló libát evett a róka a héten")
 
+# 2. Átlagosan hány kilósak a rókánál maradt libák?
+
+roka_db = 0
+for liba in libak:
+    if liba <= 3:
+        roka_db += 1
+    
+print(f"Átlagosan {roka_kilo/roka_db} kilósak a rókánál maradt libák.")
+
+
+# 3. Előfordult-e, hogy a róka legalább 3kg-os libát lopott?
+volt_e = False
+
+for liba in libak:
+    if liba >= 3:
+        volt_e = True
+        break
+
+if volt_e == True:
+    print(f"Előfordult, hogy a róka legalább 3kg-os libát lopott.")
+    
+else:
+    print(f"nem fordult elő, hogy a róka legalább 3kg-os libát lopott.")
+
+# 4. Előfordult-e, hogy a róka kisebb libát lopott, mint az előző napon?
